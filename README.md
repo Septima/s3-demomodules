@@ -3,6 +3,8 @@ A demo plugin package for Septima Search Server
 
 An example of how to package and document external Septima Search Server types
 
+[Guide: How to create external Septima Search Server types](guide.md)
+
 ## This package  
 
 This package installs _ItemsForAddressProvider_ as a details provider for Dawa Adresses
@@ -13,9 +15,10 @@ This package installs _ItemsForAddressProvider_ as a details provider for Dawa A
 
 ### Usage
 
-Include as detailshandler for a Dawa Searcher:
+Include as detailshandler for a Dawa Searcher.  
 
-```
+**Example** *(YAML Declaration:)*  
+```js
   dawasearcher:
     _type: Septima.Search.DawaSearcher
     detailhandlers:
