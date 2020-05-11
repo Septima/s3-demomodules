@@ -7,8 +7,12 @@ import icons from "@septima/septima-search/src/js/resources/icons"
 /**
  * Shows some demo details for a Dawa Adress
  * @example <caption>YAML Declaration:</caption>
-  dawa:
-    _type: s3-demo/ItemsForAddressProvider
+  dawasearcher:
+    _type: Septima.Search.DawaSearcher
+    detailhandlers:
+      - _type: s3-demomodules/ItemsForAddressProvider
+        _options:
+          header: "Demo details provider"
  * @api
  **/
 

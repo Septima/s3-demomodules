@@ -28,6 +28,10 @@ Shows some demo details for a Dawa Adress
 
 **Example** *(YAML Declaration:)*  
 ```js
-  dawa:
-    _type: s3-demo/ItemsForAddressProvider
+  dawasearcher:
+    _type: Septima.Search.DawaSearcher
+    detailhandlers:
+      - _type: s3-demomodules/ItemsForAddressProvider
+        _options:
+          header: "Demo details provider"
 ```
