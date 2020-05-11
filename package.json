@@ -1,0 +1,21 @@
+{
+  "name": "s3-demomodules",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "A demo plugin package for Septima Search Server",
+  "author": "Klavs Pihlkjær",
+  "license": "Copyright (c) 2013-2020 Septima P/S",
+  "devDependencies": {
+    "@septima/septima-search": "5.11.10",
+    "@septima/septima-search-server":"0.9.6",
+    "rimraf": "^3.0.0",
+    "jsdoc": "3.6.3",
+    "jsdoc-to-markdown": "^5.0.3",
+    "local-web-server": "3.0.7"
+  },
+  "scripts": {
+    "generate-jsdoc": "rimraf doc && jsdoc -c jsdoc/conf.json -d doc",
+    "generate-apimd": "jsdoc2md --files src/*.js > api.md",
+    "serve-jsdoc": "ws --directory ./doc -p 7002"
+  }
+}
