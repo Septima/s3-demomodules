@@ -6,7 +6,7 @@ const demoTypes = new ClassRegistry("s3-demomodules/")
 //In large package the types object may be generated from JsDoc
 demoTypes.setTypes({
   ItemsForAddressProvider: {
-    description: "Shows some demo details for a Dawa Adress"
+    classdesc: "Shows some demo details for a Dawa Adress"
   }
 })
 
