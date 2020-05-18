@@ -1,5 +1,4 @@
 /**
- * A module for adding two values.
  * @module
  */
 import DetailsHandlerDef from '@septima/septima-search/src/js/details/DetailsHandlerDef'
