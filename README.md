@@ -9,6 +9,10 @@ An example of how to package and document external Septima Search Server types
 
 This package installs _ItemsForAddressProvider_ as a details provider for Dawa Adresses
 
+## Development
+
+In many cases you want to be able to develop a package like this togheter with @septima/septima-search-server. To support this without having to build and publish new packages for this package you can use `yarn link`. See https://classic.yarnpkg.com/en/docs/cli/link for more info.
+
 ### Install
 
 `npm install --production https://github.com/Septima/s3-demomodules.git --save`
