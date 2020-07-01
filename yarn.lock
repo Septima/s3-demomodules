@@ -794,6 +794,14 @@
     pirates "^4.0.0"
     source-map-support "^0.5.16"
 
+"@babel/runtime-corejs3@7.10.2":
+  version "7.10.2"
+  resolved "https://registry.yarnpkg.com/@babel/runtime-corejs3/-/runtime-corejs3-7.10.2.tgz#3511797ddf9a3d6f3ce46b99cc835184817eaa4e"
+  integrity sha512-+a2M/u7r15o3dV1NEizr9bRi+KUVnrs/qYxF0Z06DAPx/4VCWaz1WA7EcbE+uqGgt39lp5akWGmHsTseIkHkHg==
+  dependencies:
+    core-js-pure "^3.0.0"
+    regenerator-runtime "^0.13.4"
+
 "@babel/runtime-corejs3@7.8.4":
   version "7.8.4"
   resolved "https://registry.yarnpkg.com/@babel/runtime-corejs3/-/runtime-corejs3-7.8.4.tgz#ccc4e042e2fae419c67fa709567e5d2179ed3940"
@@ -864,17 +872,17 @@
   resolved "https://registry.yarnpkg.com/@openlayers/pepjs/-/pepjs-0.5.3.tgz#298c5994cc12de5f149f841affdd8a3e506228b5"
   integrity sha512-Bgvi5c14BS0FJWyYWWFstNEnXsB30nK8Jt8hkAAdqr7E0gDdBBWVDglF3Ub19wTxvgJ/CVHyTY6VuCtnyRzglg==
 
-"@septima/septima-search-server@0.11.4":
-  version "0.11.4"
-  resolved "https://packages.septima.dk/repository/npm-hosted/@septima/septima-search-server/-/septima-search-server-0.11.4.tgz#cb98785421d6b68918ff6d144f6f4c65e92aeac7"
-  integrity sha512-8zSfAG8JIlfSyT8gLw0ewC4/b6GCYPaxC9BScU4EGuCiSuphMYPKp5gHbeROIUMXCFC3VBg64jegV+8hec+5gw==
+"@septima/septima-search-server@0.15.11":
+  version "0.15.11"
+  resolved "https://packages.septima.dk/repository/npm-hosted/@septima/septima-search-server/-/septima-search-server-0.15.11.tgz#c0524c42fc4a88c23a98ee52892090d44e45ee36"
+  integrity sha512-qVCrRH1nVQ6b6k5hpfjUjW57tj1MvXZz+xo3mcs6w4Wae12ZZD20k88L8WDynlmGC/euVcSZrIHTC42gfhy42g==
   dependencies:
     "@babel/core" "7.9.0"
     "@babel/plugin-proposal-class-properties" "7.8.3"
     "@babel/plugin-syntax-dynamic-import" "7.8.3"
     "@babel/preset-env" "7.9.5"
     "@babel/register" "7.9.0"
-    "@septima/septima-search" "5.11.10"
+    "@septima/septima-search" "5.14.6"
     adm-zip "0.4.14"
     ejs "3.0.2"
     esm "3.2.25"
@@ -892,21 +900,6 @@
     swagger-jsdoc "4.0.0"
     swagger-ui-express "4.1.4"
 
-"@septima/septima-search@5.11.10":
-  version "5.11.10"
-  resolved "https://packages.septima.dk/repository/npm-hosted/@septima/septima-search/-/septima-search-5.11.10.tgz#59f2dc46c398c36465664af59220d4681981afbe"
-  integrity sha512-z92EscJhDJsD6M8PVkhxD6Q4rYZdBKFY7P0+6NvndvHykCqHjlFvZ+kX/eXzojyyp/r5xctzN9V4w9SpZyo95w==
-  dependencies:
-    "@babel/runtime-corejs3" "7.8.4"
-    core-js "3.6.1"
-    js-yaml "3.13.1"
-    jsonpath-plus "2.0.0"
-    ol "6.1.1"
-    pino "5.16.0"
-    proj4 "2.6.0"
-    reproject "1.2.5"
-    whatwg-fetch "3.0.0"
-
 "@septima/septima-search@5.12.6":
   version "5.12.6"
   resolved "https://packages.septima.dk/repository/npm-hosted/@septima/septima-search/-/septima-search-5.12.6.tgz#231dee6e7d1313fd894c7a4f7a0595bb2588efb1"
@@ -919,6 +912,22 @@
     ol "6.1.1"
     pino "5.16.0"
     proj4 "2.6.0"
+    reproject "1.2.5"
+    whatwg-fetch "3.0.0"
+
+"@septima/septima-search@5.14.6":
+  version "5.14.6"
+  resolved "https://packages.septima.dk/repository/npm-hosted/@septima/septima-search/-/septima-search-5.14.6.tgz#2c027b9f53bf9d2d4d846e5d1977310f16139135"
+  integrity sha512-qfMCetLTxrWMmtBFeDC9J/iFZ9w13CAgF7b3VSkoMvAv8YYr12vgSZfNMFBOHpPaBh9YYQHcSlreJ2iwbbErXA==
+  dependencies:
+    "@babel/runtime-corejs3" "7.10.2"
+    core-js "3.6.5"
+    js-yaml "3.14.0"
+    jsonpath-plus "4.0.0"
+    moment "2.26.0"
+    ol "6.3.1"
+    pino "6.3.1"
+    proj4 "2.6.2"
     reproject "1.2.5"
     whatwg-fetch "3.0.0"
 
@@ -1530,6 +1539,11 @@ core-js@3.6.1:
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.6.1.tgz#39d5e2e346258cc01eb7d44345b1c3c014ca3f05"
   integrity sha512-186WjSik2iTGfDjfdCZAxv2ormxtKgemjC3SI6PL31qOA0j5LhTDVjHChccoc7brwLvpvLPiMyRlcO88C4l1QQ==
 
+core-js@3.6.5:
+  version "3.6.5"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.6.5.tgz#7395dc273af37fb2e50e9bd3d9fe841285231d1a"
+  integrity sha512-vZVEEwZoIsI+vPEuoF9Iqf5H7/M3eeQqWlQnYa8FSKKePuYTf5MWnxb5SDAzCa60b3JBRS5g9b+Dq7b1y/RCrA==
+
 core-util-is@1.0.2, core-util-is@~1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
@@ -1686,6 +1700,11 @@ electron-to-chromium@^1.3.413:
   version "1.3.432"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.432.tgz#3bf7b191978ff2e8bc3caf811bb52b1e9f9eab25"
   integrity sha512-/GdNhXyLP5Yl2322CUX/+Xi8NhdHBqL6lD9VJVKjH6CjoPGakvwZ5CpKgj/oOlbzuWWjOvMjDw1bBuAIRCNTlw==
+
+elm-pep@^1.0.4:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/elm-pep/-/elm-pep-1.0.6.tgz#768b6b0cc59ce6b608d9d14c87ef8c2c0936f6ec"
+  integrity sha512-1DJ6ReFk8+GtgoqRiEhBo28K69Rxe9Bfc7h16+1VMQT2KlCuPBYj5W33OYa2AZpqkuqCBLhcNzO10zxJVakapA==
 
 encodeurl@^1.0.2, encodeurl@~1.0.2:
   version "1.0.2"
@@ -2286,6 +2305,14 @@ js-yaml@3.13.1, js-yaml@^3.13.1:
     argparse "^1.0.7"
     esprima "^4.0.0"
 
+js-yaml@3.14.0:
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.14.0.tgz#a7a34170f26a21bb162424d8adacb4113a69e482"
+  integrity sha512-/4IbIeHcD9VMHFqDR/gQ7EdZdLimOvW2DdcxFjdyyZ9NsbS+ccrXqVWDtab/lRl5AlUqmpBx8EhPaWR+OtY17A==
+  dependencies:
+    argparse "^1.0.7"
+    esprima "^4.0.0"
+
 js2xmlparser@^4.0.0, js2xmlparser@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/js2xmlparser/-/js2xmlparser-4.0.1.tgz#670ef71bc5661f089cc90481b99a05a1227ae3bd"
@@ -2424,6 +2451,11 @@ jsonpath-plus@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/jsonpath-plus/-/jsonpath-plus-2.0.0.tgz#3ebf30b79e2262d69826084ba03c406a9de440a0"
   integrity sha512-ksXaz9+3SIZ5BMxgr7MQueYcR515VRZPuoDhIymUd1JcF6BnVaYJS7k4NJni4EHhvJaOIGGiPqT8+ifsGp6mBw==
+
+jsonpath-plus@4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/jsonpath-plus/-/jsonpath-plus-4.0.0.tgz#954b69faa3d8b07f30ae2f9e601176a4b0d2806e"
+  integrity sha512-e0Jtg4KAzDJKKwzbLaUtinCn0RZseWBVRTRGihSpvFlM3wTR7ExSp+PTdeTsDrLNJUe7L7JYJe8mblHX5SCT6A==
 
 jsprim@^1.2.2:
   version "1.4.1"
@@ -2995,6 +3027,11 @@ moment@2.24.0:
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.24.0.tgz#0d055d53f5052aa653c9f6eb68bb5d12bf5c2b5b"
   integrity sha512-bV7f+6l2QigeBBZSM/6yTNq4P2fNpSWj/0e7jQcy87A8e7o2nAfP/34/2ky5Vw4B9S446EtIhodAzkFCcR4dQg==
 
+moment@2.26.0:
+  version "2.26.0"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.26.0.tgz#5e1f82c6bafca6e83e808b30c8705eed0dcbd39a"
+  integrity sha512-oIixUO+OamkUkwjhAVE18rAMfRJNsNe/Stid/gwHSOfHrOtw9EhAY2AHvdKZ/k/MggcYELFCJz/Sn2pL8b8JMw==
+
 morgan@^1.6.1:
   version "1.10.0"
   resolved "https://registry.yarnpkg.com/morgan/-/morgan-1.10.0.tgz#091778abc1fc47cd3509824653dae1faab6b17d7"
@@ -3129,6 +3166,16 @@ ol@6.1.1:
   integrity sha512-0dL3i3eJqgOpqIjDKEY3grkeQnjAYfV5L/JCxhOu4SxiaizRwFrFgeas6LILRoxKa03jhQFbut2r2bbgcLGQeA==
   dependencies:
     "@openlayers/pepjs" "^0.5.3"
+    pbf "3.2.1"
+    pixelworks "1.1.0"
+    rbush "^3.0.1"
+
+ol@6.3.1:
+  version "6.3.1"
+  resolved "https://registry.yarnpkg.com/ol/-/ol-6.3.1.tgz#11fcb987e632efb9f75f87fe8d85f50764543843"
+  integrity sha512-cSSYizzUJQ7AhFSrLPAKopjDXPCHtJsXSmjf3xutPG+iyBeD9IOepQGSgpOSZavPI1gsYh9wowiH+NZwVJ/NYQ==
+  dependencies:
+    elm-pep "^1.0.4"
     pbf "3.2.1"
     pixelworks "1.1.0"
     rbush "^3.0.1"
@@ -3398,6 +3445,18 @@ pino@6.2.0:
     quick-format-unescaped "^4.0.1"
     sonic-boom "^1.0.0"
 
+pino@6.3.1:
+  version "6.3.1"
+  resolved "https://registry.yarnpkg.com/pino/-/pino-6.3.1.tgz#c58ea36d66a7f0631dbc7472652e9b05988abd24"
+  integrity sha512-RgT010a5FfnxJ2AwB0TqcEuM+gNsnd08PZnCob98JSTLldLF0GMFJ/Z1VE/rdl5yJCqcoLwftmZSwSFY4/Hc2g==
+  dependencies:
+    fast-redact "^2.0.0"
+    fast-safe-stringify "^2.0.7"
+    flatstr "^1.0.12"
+    pino-std-serializers "^2.4.2"
+    quick-format-unescaped "^4.0.1"
+    sonic-boom "^1.0.0"
+
 pirates@^4.0.0:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/pirates/-/pirates-4.0.1.tgz#643a92caf894566f91b2b986d2c66950a8e2fb87"
@@ -3463,6 +3522,14 @@ proj4@2.6.0:
   dependencies:
     mgrs "1.0.0"
     wkt-parser "^1.2.0"
+
+proj4@2.6.2:
+  version "2.6.2"
+  resolved "https://registry.yarnpkg.com/proj4/-/proj4-2.6.2.tgz#4665d7cbc30fd356375007c2fed53b07dbda1d67"
+  integrity sha512-Pn0+HZtXb4JzuN8RR0VM7yyseegiYHbXkF+2FOdGpzRojcZ1BTjWxOh7qfp2vH0EyLu8pvcrhLxidwzgyUy/Gw==
+  dependencies:
+    mgrs "1.0.0"
+    wkt-parser "^1.2.4"
 
 proj4@^2.4.4:
   version "2.6.1"
