@@ -9,18 +9,12 @@
     "@septima/septima-search-server":"0.15.14"
   },
   "devDependencies": {
-    "@septima/septima-search-server":"0.15.14",
-    "@septima/septima-search": "5.12.6",
-    "rimraf": "^3.0.0",
-    "jsdoc": "3.6.3",
-    "jsdoc-to-markdown": "^5.0.3",
-    "local-web-server": "3.0.7",
-    "nodemon": "^2.0.3"
-  },
-  "dependencies": {
-    "@babel/core": "7.9.0",
-    "@babel/register": "7.9.0",
-    "esm": "3.2.25"
+    "@septima/septima-search": "5.14.15",
+    "@septima/septima-search-server":"0.15.15",
+    "rimraf": "3.0.0",
+    "jsdoc": "3.6.4",
+    "jsdoc-to-markdown": "6.0.1",
+    "local-web-server": "4.2.1"
   },
   "scripts": {
     "serve": "nodemon --inspect ./serve.js",

@@ -28,4 +28,4 @@ Include as detailshandler for a Dawa Searcher.
           header: "Demo details provider"
 ```  
 
-All options are optional. Please see [the API](api.md) 
+All options are optional. Please see [the API](api.md)
