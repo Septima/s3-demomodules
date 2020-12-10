@@ -1,0 +1,14 @@
+---
+controller:
+  _type: Septima.Search.Controller
+  _options:
+    blankBehavior: search
+  searchers:
+    - _type: Septima.Search.DawaSearcher
+      _options:
+        minimumShowCount: 3
+        allowDetails: false
+      detailhandlers:
+        - _type: s3-demomodules/ItemsForAddressProvider
+          _options:
+            header: Demo details provider

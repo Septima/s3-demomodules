@@ -5,15 +5,25 @@
   "description": "A demo plugin package for Septima Search Server",
   "author": "Klavs Pihlkjær",
   "license": "Copyright (c) 2013-2020 Septima P/S",
+  "peerDependencies": {
+    "@septima/septima-search-server":"0.15.14"
+  },
   "devDependencies": {
+    "@septima/septima-search-server":"0.15.14",
     "@septima/septima-search": "5.12.6",
-    "@septima/septima-search-server":"0.15.11",
     "rimraf": "^3.0.0",
     "jsdoc": "3.6.3",
     "jsdoc-to-markdown": "^5.0.3",
-    "local-web-server": "3.0.7"
+    "local-web-server": "3.0.7",
+    "nodemon": "^2.0.3"
+  },
+  "dependencies": {
+    "@babel/core": "7.9.0",
+    "@babel/register": "7.9.0",
+    "esm": "3.2.25"
   },
   "scripts": {
+    "serve": "nodemon --inspect ./serve.js",
     "generate-jsdoc": "rimraf doc && jsdoc -c jsdoc/conf.json -d doc",
     "generate-apimd": "jsdoc2md --files src/*.js > api.md",
     "serve-jsdoc": "ws --directory ./doc -p 7002"

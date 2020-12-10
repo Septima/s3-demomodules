@@ -12,6 +12,7 @@ This package installs _ItemsForAddressProvider_ as a details provider for Dawa A
 ### Install
 
 `npm install --production https://github.com/Septima/s3-demomodules.git --save`
+https://docs.npmjs.com/files/package.json#git-urls-as-dependencies
 
 ### Usage
 
